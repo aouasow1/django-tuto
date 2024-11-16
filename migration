@@ -1,0 +1,40 @@
+#startapp blog and migrations
+Microsoft Windows [Version 10.0.22631.4460]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\aouas> cd djangogirls
+
+C:\Users\aouas\djangogirls> myvenv\scripts\activate
+
+(myvenv) C:\Users\aouas\djangogirls> python manage.py startapp blog
+
+(myvenv) C:\Users\aouas\djangogirls> python manage.py makemigrations blog
+Migrations for 'blog':
+  blog\migrations\0001_initial.py
+    + Create model Post
+
+(myvenv) C:\Users\aouas\djangogirls> python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Applying blog.0001_initial... OK
+
+(myvenv) C:\Users\aouas\djangogirls>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 17:10:38
+Django version 5.1.3, using settings 'mysit.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\aouas\djangogirls\mysit\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 17:40:32
+Django version 5.1.3, using settings 'mysit.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
